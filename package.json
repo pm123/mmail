@@ -1,0 +1,34 @@
+{
+  "name": "mmail",
+  "version": "1.0.0",
+  "description": "前端代码",
+  "main": "index.js",
+  "scripts": {
+    "dev": "WEBPACK_ENV webpack-dev-server --inline --port 8088",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --prot 8088",
+    "dist": "WEBPACK_ENV webpack -p",
+    "dist_win": "set WEBPACK_ENV=dist && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pm123/mmail.git"
+  },
+  "author": "pm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pm123/mmail/issues"
+  },
+  "homepage": "https://github.com/pm123/mmail#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {}
+}
