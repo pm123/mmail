@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%= require('html-loader!./layout/header.html') %>
+	<head>
+    	<%= require('html-loader!./layout/header-common.html') %>
+		<title>happymmail电商平台</title>
+	</head>
     <body>
-    webpack 123
-    <script src="https://cdn.staticfile.org/jquery/1.9.1/jquery.min.js"></script>
+    	<%= require('html-loader!./layout/nav.html') %>
+    	<%= require('html-loader!./layout/header.html') %>
+	    <div class="page-wrap w">
+    		<%= require('html-loader!./layout/nav-side.html') %>
+	    	<div class="content with-nav">
+	    		text
+	    	</div>
+	    </div>
+    	<%= require('html-loader!./layout/footer.html') %>
     </body>
 </html>

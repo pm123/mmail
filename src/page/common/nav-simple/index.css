@@ -1,0 +1,17 @@
+/*
+* @Author: Dell
+* @Date:   2017-07-21 19:13:46
+* @Last Modified by:   Dell
+* @Last Modified time: 2017-07-21 19:18:34
+*/
+.nav-simple{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.nav-simple .logo{
+	font-size: 26px;
+	font-weight: bold;
+	color: #c60023;
+}

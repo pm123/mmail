@@ -1,0 +1,22 @@
+/*
+* @Author: Dell
+* @Date:   2017-07-21 20:43:05
+* @Last Modified by:   Dell
+* @Last Modified time: 2017-07-21 20:48:17
+*/
+.footer{
+	padding-bottom: 10px;
+}
+.footer .links{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.footer .links .link{
+	padding: 0 10px;
+}
+.footer .copyright{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
