@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2017-07-22 09:04:18
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-07-22 09:53:02
+* @Last Modified time: 2017-07-25 11:13:25
 */
 
 'use strict';
@@ -13,11 +13,11 @@ var _mm = require('util/mm.js');
 //通用页面头部
 var header = {
 	init: function() {
+		this.onLoad();
 		this.bindEvent();
-		return this;
 	},
 	onLoad: function(){
-		var keyword = _mm.getUrlParam('keyword');
+		var keyword = _mm.getUrlparam('keyword');
 		//keyword 存在，回填输入框
 		if(keyword){
 			$('#search-input').val(keyword);

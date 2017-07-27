@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2017-07-19 14:39:31
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-07-22 15:48:30
+* @Last Modified time: 2017-07-25 16:39:08
 */
 
 'use strict';
@@ -74,7 +74,7 @@ var _mm = {
 		var value = $.trim(value);
 		//非空验证
 		if('require' === type){
-			return !! value;
+			return !!value;
 		}
 		//手机号验证
 		if('phone' === type){
@@ -87,7 +87,7 @@ var _mm = {
 	},
 	//统一登录处理
 	doLogin: function() {
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	goHome: function(){
 		window.location.href = './index.html';

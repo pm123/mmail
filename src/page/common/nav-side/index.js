@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2017-07-22 10:10:41
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-07-22 14:48:11
+* @Last Modified time: 2017-07-23 20:21:46
 */
 'use strict';
 
@@ -17,8 +17,8 @@ var navSide = {
 		name: '',
 		navList: [
 			{name: 'user-center', desc: '个人中心', href: './user-center.html'},
-			{name: 'order-list', desc: '我的订单', href: './pass-update.html'},
-			{name: 'pass-update', desc: '修改密码', href: './pass-update.html'},
+			{name: 'order-list', desc: '我的订单', href: './order-list.html'},
+			{name: 'user-pass-update', desc: '修改密码', href: './user-pass-update.html'},
 			{name: 'about', desc: '关于MMail', href: './about.html'}
 		]
 	},

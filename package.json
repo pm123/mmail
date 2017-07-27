@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "WEBPACK_ENV webpack-dev-server --inline --port 8088",
-    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --prot 8088",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
     "dist": "WEBPACK_ENV webpack -p",
     "dist_win": "set WEBPACK_ENV=dist && webpack -p"
   },

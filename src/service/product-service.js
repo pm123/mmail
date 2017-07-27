@@ -1,29 +1,30 @@
 /*
 * @Author: Dell
-* @Date:   2017-07-22 09:56:37
+* @Date:   2017-07-25 11:07:55
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-07-23 20:27:57
+* @Last Modified time: 2017-07-26 20:42:30
 */
 
 'use strict';
-
 var _mm = require('util/mm.js')
-var _user = {
-	// 用户登录
-    login: function(userInfo, resolve, reject){
+var _product = {
+	// 获取商品列表信息
+    getProductList: function(listParam, resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/user/login.do'),
-            data	: userInfo,
+            url     : _mm.getServerUrl('/product/list.do'),
+            data	: listParam,
             method  : 'POST',
             success : resolve,
             error   : reject
         });
     },
-    // 用户注册
-    register: function(userInfo, resolve, reject){
+    // 获取商品详细信息
+    getProductDetail: function(productId, resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/user/register.do'),
-            data    : userInfo,
+            url     : _mm.getServerUrl('/product/detail.do'),
+            data    : {
+                productId: productId
+            },
             method  : 'POST',
             success : resolve,
             error   : reject
@@ -122,4 +123,4 @@ var _user = {
     	})
     }
 }
-module.exports = _user;
+module.exports = _product;
