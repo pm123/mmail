@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2017-07-19 14:39:31
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-07-25 16:39:08
+* @Last Modified time: 2017-07-30 10:01:04
 */
 
 'use strict';
@@ -23,6 +23,7 @@ var _mm = {
 			dataType: params.type     || 'json',
 			data 	: params.data     || '',
 			success : function(res) {
+				console.log(res);
 				//请求成功
 				if(res.status === 0) {
 					typeof params.success === 'function' && params.success(res.data, res.msg);
