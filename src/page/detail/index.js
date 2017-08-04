@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2017-07-26 19:15:54
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-07-27 14:16:00
+* @Last Modified time: 2017-08-04 11:16:36
 */
 
 'use strict';
@@ -52,11 +52,12 @@ var page = {
         });
         // 加入购物车
         $(document).on('click', '.cart-add', function(){
-        	console.log(_this.data.productId);
+        	
             _cart.addToCart({
                 productId   : _this.data.productId,
                 count       : $('.p-count').val()
             }, function(res){
+            	
                 window.location.href = './result.html?type=cart-add';
             }, function(errMsg){
                 _mm.errorTips(errMsg);
