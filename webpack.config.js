@@ -2,7 +2,7 @@
 * @Author: pm
 * @Date:   2017-07-18 14:58:21
 * @Last Modified by:   Dell
-* @Last Modified time: 2017-08-04 13:03:29
+* @Last Modified time: 2017-08-04 14:54:58
 */
 
 var webpack = require('webpack');
@@ -19,6 +19,7 @@ var getHtmlConfig = function(name, title){
 	return {
 		template: './src/view/' + name + '.html',
     	filename: 'view/' + name + '.html',
+        favicom : './favicon.ico',
     	title: title,
         inject: true,
     	hash: true,
@@ -47,8 +48,8 @@ var config = {
     	'result' : ['./src/page/result/index.js']
     },
     output: { //js的目标文件
-        path: './dist',
-        publicPath : '/dist',
+        path: path.join(__dirname, './dist'),
+        publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
         filename: 'js/[name].js'
     },
     externals: { //外部依赖的声明
